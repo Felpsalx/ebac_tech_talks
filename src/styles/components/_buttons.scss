@@ -1,3 +1,4 @@
+@use '../variables';
 .button{
     padding: 12px;
     font-size: 18px;
@@ -6,8 +7,8 @@
     text-align: center;
     white-space: nowrap;
     &--primary{
-        color: #fff;
-        background-color:#4F2AC3 ;
+        color: variables.$textColor;
+        background-color: variables.$purple;
     }
     @media (max-width:640px){
         display: block;
@@ -16,5 +17,6 @@
     @media (max-width:1024px){
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 }
